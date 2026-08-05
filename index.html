@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SPR — سنگ، کاغذ، قیچی</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>SPR — سنگ، کاغذ، قیچی</h1>
+
+    <section class="scoreboard">
+      <div>شما: <span id="player-score">0</span></div>
+      <div>کامپیوتر: <span id="cpu-score">0</span></div>
+    </section>
+
+    <section class="choices">
+      <button class="choice" data-choice="rock">🪨 سنگ</button>
+      <button class="choice" data-choice="paper">📄 کاغذ</button>
+      <button class="choice" data-choice="scissors">✂️ قیچی</button>
+    </section>
+
+    <section class="result">
+      <div id="round-result">یک انتخاب بزنید تا بازی شروع شود.</div>
+      <div class="plays">
+        <div>شما: <span id="player-play">-</span></div>
+        <div>کامپیوتر: <span id="cpu-play">-</span></div>
+      </div>
+    </section>
+
+    <section class="controls">
+      <button id="reset">شروع مجدد امتیازها</button>
+    </section>
+
+    <footer>
+      <small>ساخته‌شده توسط GitHub Copilot برای مخزن SPR</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
