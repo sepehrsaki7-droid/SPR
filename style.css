@@ -1,0 +1,54 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#06b6d4;
+  --text:#e6eef8;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Tahoma, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial;
+  background:linear-gradient(180deg,#071021 0%, #0f2433 100%);
+  color:var(--text);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  direction:rtl;
+}
+.container{
+  width:min(720px,96vw);
+  background:var(--card);
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 8px 30px rgba(2,6,23,0.7);
+}
+h1{margin:0 0 12px 0; font-size:1.4rem; text-align:center}
+.scoreboard{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding:10px;
+  background:rgba(255,255,255,0.02);
+  border-radius:8px;
+  margin-bottom:14px;
+  font-weight:600;
+}
+.choices{display:flex; gap:12px; justify-content:center; margin:12px 0}
+.choice{
+  padding:12px 18px;
+  font-size:1rem;
+  border-radius:10px;
+  border:2px solid transparent;
+  background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));
+  color:var(--text);
+  cursor:pointer;
+  transition:transform .12s, border-color .12s;
+}
+.choice:hover{transform:translateY(-4px); border-color:rgba(6,182,212,0.18)}
+.result{padding:12px; text-align:center; background:rgba(255,255,255,0.01); border-radius:8px}
+.plays{display:flex; justify-content:space-around; margin-top:8px; font-size:.95rem}
+.controls{display:flex; justify-content:center; margin-top:12px}
+#reset{background:transparent;border:1px solid rgba(255,255,255,0.06); padding:8px 12px;border-radius:8px;color:var(--text);cursor:pointer}
+footer{margin-top:14px;text-align:center;font-size:.8rem;color:rgba(230,238,248,0.6)}
